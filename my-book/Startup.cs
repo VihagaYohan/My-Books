@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using my_book.Data;
+using my_book.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,11 @@ namespace my_book
             services.AddControllers();
             // configure DbContext with SQL
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
+
+
+            // Configure the services
+            services.AddTransient<BooksService>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "my_book", Version = "v1" });
