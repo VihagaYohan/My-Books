@@ -39,6 +39,8 @@ namespace my_book
 
             // Configure the services
             services.AddTransient<BooksService>();
+            services.AddTransient<AuthorsServices>();
+            services.AddTransient<PublisherServices>();
 
             services.AddSwaggerGen(c =>
             {
@@ -67,7 +69,7 @@ namespace my_book
                 endpoints.MapControllers();
             });
 
-            AppDbInitializer.Seed(app);
+          //  AppDbInitializer.Seed(app);
         }
     }
 }

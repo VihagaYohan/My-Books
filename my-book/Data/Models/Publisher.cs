@@ -8,7 +8,7 @@ namespace my_book.Data.Models
 	public class Publisher
 	{
 		public int Id { get; set; }
-		public String Name { get; set; }
+		public String FullName { get; set; }
 
 		// navigation properties
 		public List<Book> Books { get; set; }
