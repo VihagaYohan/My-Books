@@ -5979,19 +5979,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yohan\\.nuget\\packages\\": {}
+    "C:\\Users\\Prodigi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP.Net Core\\my-book\\my-book\\my-book.csproj",
+      "projectUniqueName": "D:\\Learning\\My-Books\\my-book\\my-book.csproj",
       "projectName": "my-book",
-      "projectPath": "D:\\ASP.Net Core\\my-book\\my-book\\my-book.csproj",
-      "packagesPath": "C:\\Users\\Yohan\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP.Net Core\\my-book\\my-book\\obj\\",
+      "projectPath": "D:\\Learning\\My-Books\\my-book\\my-book.csproj",
+      "packagesPath": "C:\\Users\\Prodigi\\.nuget\\packages\\",
+      "outputPath": "D:\\Learning\\My-Books\\my-book\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yohan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Prodigi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
