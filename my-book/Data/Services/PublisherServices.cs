@@ -52,13 +52,18 @@ namespace my_book.Data.Services
 			return publisher;
 		}
 
+		// delete publisher by id
 		public void DeletePublisherById(int id)
 		{
 			var _publisher = _context.Publishers.FirstOrDefault(n => n.Id == id);
-			if (_publisher != null) 
+			if (_publisher != null)
 			{
 				_context.Publishers.Remove(_publisher);
 				_context.SaveChanges();
+			}
+			else 
+			{
+				throw new Exception($"The publishewr with id : {id} does not exists");
 			}
 		}
 	}
