@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
+using my_book.Exceptions;
 
 namespace my_book.Data.Services
 {
@@ -34,6 +36,8 @@ namespace my_book.Data.Services
 		// add publishers
 		public Publisher AddPublisher(PublisherVM publisher) 
 		{
+			if (StringStartsWithNumber(publisher.FullName)) throw new PublisherNameException("Name starts with number", publisher.FullName) ;
+
 			var _publisher = new Publisher()
 			{
 				FullName = publisher.FullName
@@ -65,6 +69,13 @@ namespace my_book.Data.Services
 			{
 				throw new Exception($"The publishewr with id : {id} does not exists");
 			}
+		}
+
+		// check if the publisher name starts with a number
+		private bool StringStartsWithNumber(string name) 
+		{
+			if (Regex.IsMatch(name, @"^\d")) return true;
+			return false;
 		}
 	}
 }
