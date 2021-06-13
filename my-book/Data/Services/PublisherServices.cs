@@ -18,10 +18,23 @@ namespace my_book.Data.Services
 		}
 
 		// get all publishers
-		public List<Publisher> GetAllPublishers() 
+		public List<Publisher> GetAllPublishers(string sortBy) 
 		{
-			var response = _context.Publishers.ToList();
-			return response;
+			var allPublishers = _context.Publishers.OrderBy(n => n.FullName).ToList();
+
+			// sorting
+			if (!string.IsNullOrEmpty(sortBy)) 
+			{
+				switch (sortBy) 
+				{
+					case "name_desc":
+						allPublishers = allPublishers.OrderByDescending(n => n.FullName).ToList();
+						break;
+					default:
+						break;
+				}
+			}
+			return allPublishers;
 		}
 
 		// get publisher with books and authors list
