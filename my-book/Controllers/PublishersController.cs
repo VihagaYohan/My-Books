@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using my_book.Data.Models;
 using my_book.Data.Services;
 using my_book.Data.ViewModels;
 using my_book.Exceptions;
@@ -40,15 +41,17 @@ namespace my_book.Controllers
 		}
 
 		[HttpGet("get-publisher-by-id/{id}")]
-		public IActionResult GetPublisherById(int id) 
+		public ActionResult<Publisher> GetPublisherById(int id) 
 		{
 			var publisher = _publisherService.GetPublisherById(id);
 			if (publisher != null)
 			{
-				return Ok(publisher);
+				//return Ok(publisher);
+				return publisher;
 			}
 			else 
 			{
+				//return NotFound();
 				return NotFound();
 			}
 		}
