@@ -1,0 +1,36 @@
+06/25/2021 19:17:58 +05:30 [Information] - Message: Application started. Press Ctrl+C to shut down.
+06/25/2021 19:17:58 +05:30 [Information] - Message: Request starting HTTP/2 GET https://localhost:44315/api/publishers/get-all-publishers - -
+06/25/2021 19:17:58 +05:30 [Information] - Message: Hosting environment: "Development"
+06/25/2021 19:17:58 +05:30 [Information] - Message: Content root path: "D:\Learning\My-Books\my-book"
+06/25/2021 19:17:58 +05:30 [Information] - Message: Executing endpoint '"my_book.Controllers.PublishersController.GetAllPublishers (my-book)"'
+06/25/2021 19:17:58 +05:30 [Information] - Message: Route matched with "{action = \"GetAllPublishers\", controller = \"Publishers\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAllPublishers(System.String, System.String)" on controller "my_book.Controllers.PublishersController" ("my-book").
+06/25/2021 19:17:58 +05:30 [Information] - Message: This is just a log in get all publishers
+06/25/2021 19:17:59 +05:30 [Information] - Message: Entity Framework Core "5.0.6" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/25/2021 19:18:00 +05:30 [Information] - Message: Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[FullName]
+FROM [Publishers] AS [p]
+ORDER BY [p].[FullName]"
+06/25/2021 19:18:01 +05:30 [Information] - Message: Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[my_book.Data.Models.Publisher, my-book, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/25/2021 19:18:01 +05:30 [Information] - Message: Executed action "my_book.Controllers.PublishersController.GetAllPublishers (my-book)" in 2766.6026ms
+06/25/2021 19:18:01 +05:30 [Information] - Message: Executed endpoint '"my_book.Controllers.PublishersController.GetAllPublishers (my-book)"'
+06/25/2021 19:18:01 +05:30 [Information] - Message: Request finished HTTP/2 GET https://localhost:44315/api/publishers/get-all-publishers - - - 200 - application/json;+charset=utf-8 2935.5730ms
+06/25/2021 19:18:01 +05:30 [Information] - Message: Request starting HTTP/2 GET https://localhost:44315/favicon.ico - -
+06/25/2021 19:18:01 +05:30 [Information] - Message: Request finished HTTP/2 GET https://localhost:44315/favicon.ico - - - 404 - - 11.1503ms
+06/25/2021 19:29:15 +05:30 [Information] - Message: Application started. Press Ctrl+C to shut down.
+06/25/2021 19:29:15 +05:30 [Information] - Message: Request starting HTTP/2 GET https://localhost:44315/api/publishers/get-all-publishers - -
+06/25/2021 19:29:15 +05:30 [Information] - Message: Hosting environment: "Development"
+06/25/2021 19:29:15 +05:30 [Information] - Message: Content root path: "D:\Learning\My-Books\my-book"
+06/25/2021 19:29:15 +05:30 [Information] - Message: Executing endpoint '"my_book.Controllers.PublishersController.GetAllPublishers (my-book)"'
+06/25/2021 19:29:15 +05:30 [Information] - Message: Route matched with "{action = \"GetAllPublishers\", controller = \"Publishers\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAllPublishers(System.String, System.String)" on controller "my_book.Controllers.PublishersController" ("my-book").
+06/25/2021 19:29:16 +05:30 [Information] - Message: This is just a log in get all publishers
+06/25/2021 19:29:16 +05:30 [Information] - Message: Entity Framework Core "5.0.6" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/25/2021 19:29:18 +05:30 [Information] - Message: Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[FullName]
+FROM [Publishers] AS [p]
+ORDER BY [p].[FullName]"
+06/25/2021 19:29:18 +05:30 [Information] - Message: Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[my_book.Data.Models.Publisher, my-book, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/25/2021 19:29:18 +05:30 [Information] - Message: Executed action "my_book.Controllers.PublishersController.GetAllPublishers (my-book)" in 2362.8893ms
+06/25/2021 19:29:18 +05:30 [Information] - Message: Executed endpoint '"my_book.Controllers.PublishersController.GetAllPublishers (my-book)"'
+06/25/2021 19:29:18 +05:30 [Information] - Message: Request finished HTTP/2 GET https://localhost:44315/api/publishers/get-all-publishers - - - 200 - application/json;+charset=utf-8 2513.7292ms
+06/25/2021 19:29:18 +05:30 [Information] - Message: Request starting HTTP/2 GET https://localhost:44315/favicon.ico - -
+06/25/2021 19:29:18 +05:30 [Information] - Message: Request finished HTTP/2 GET https://localhost:44315/favicon.ico - - - 404 - - 9.5173ms
